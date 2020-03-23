@@ -1,0 +1,30 @@
+*{
+    outline: 2px solid red; 
+}
+#wrapper{
+
+}
+#map{
+width: 900px;
+ height: 500px; 
+/* display: inline-block; */
+}
+h1{
+    color: royalblue;
+}
+.photo{
+    height: 100px;
+    /* width: 20px; */
+}
+#x{
+    
+    display: inline-block;
+    vertical-align: top;
+}
+#y{
+    
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    padding: 20px;
+}

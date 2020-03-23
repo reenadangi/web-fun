@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
+    <!-- <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUo_-bUhKZU5AnDSHIz7K4NGWt4vcXDVc&libraries=places&callback=initMap">
+    
+</script> -->
+  <script defer src='placemain.js'></script>
+    <link rel="stylesheet" href="placesstyle.css">
+    
+    <title>Document</title>
+</head>
+<body>
+        <div>
+                <input id="pac-input" class="controls" type="text" placeholder="Enter a business">
+              </div>
+              
+              <div id="info-table">
+                Name: <span id="place_name"></span><br> Place id: <span id="place_id"></span><br> Address :<span id="place_address"></span><br> Phone : <span id="phone_no"></span><br> Openhours: <span id="open_time"></span><br> Open Now : <span id="open_now"></span><br>  website : <span id="website"></span><br> photo :<br> <img id="photo" src="" style="display:none;" />
+              </div>
+              
+              <div id="map"></div>
+              <div id="infowindow-content">
+                <span id="place-name" class="title"></span><br>
+                <strong>Place ID:</strong> <span id="place-id"></span><br>
+                <span id="place-address"></span>
+              </div>
+              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUo_-bUhKZU5AnDSHIz7K4NGWt4vcXDVc&libraries=places&callback=initMap">
+              </script>
+    
+</body>
+
+</html>

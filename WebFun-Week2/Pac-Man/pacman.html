@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>pacman-demo</title>
+</head>
+<body>
+    <div id="world">
+
+    </div>
+    
+    <div class="pacman">
+
+    </div>
+
+    <script>
+    //have javascript display the world
+
+    var world=[
+        [2,2,2,2,1,2,2,2,2,2],
+        [2,2,2,2,2,2,1,1,1,1],
+        [2,0,0,0,2,1,1,1,1,1],
+        [2,1,1,2,1,2,2,1,1,1],
+        [2,1,1,1,1,1,2,1,1,1],
+        [2,1,1,1,1,2,2,2,2,1],
+        [2,1,1,1,1,1,1,1,2,1],
+        [2,2,2,1,2,1,1,1,2,1],
+        [2,2,2,1,2,2,2,2,2,2]
+    ];
+    function displayWorld()
+    {
+        console.log(world.length);
+        var output='';
+        for(var i=0;i<world.length;i++)
+        {
+            console.log("in display");
+            output+="\n<div class='row'>\n"
+            for(var j=0;j<world.length;j++)
+            {
+                if(world[i][j]==2)
+                {
+                    output+="<div class='brick'></div>";
+                }
+               else if(world[i][j]==1)
+                {
+                    output+="<div class='coin'></div>";
+                }
+                else if(world[i][j]==0)
+                {
+                    output+="<div class='empty'></div>";
+                }
+
+            }
+            output+="\n</div>\n"
+        }
+        console.log(output);
+        document.getElementById('world').innerHTML= output;
+    }
+    displayWorld();
+    </script>
+    
+</body>
+</html>
